@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<main rect="0,0,420,320" text="Ex_DirectUI 4.1 GoDemo" background-image="file(./res/1.gif)" background-color="rgba(0,0,0,128)" style-directui="232775" style-window="-1777729536" styleex-window="786440" onmessage="msg.login" >
+
+	<static id="1000" rect="11,0,409,320" background-image="file(./res/l1.png)"/>
+	<static id="1001" rect="33,0,387,320" background-image="file(./res/l2.png)"/>
+	<static id="1002" rect="0,0,382,320" background-image="file(./res/l3.png)"/>
+
+	<static rect="0,242,420,79" background-image="file(./res/hill.png)"/>
+
+	
+	<static rect="159,39,102,55" onload="onload_login" ontimer="ontimer_login"/>
+
+	<static id="1010" rect="0,108,420,88" background-color="rgb(0,0,0,51)" blur="15">
+		
+		<edit id="1003" rect="0,0,420,44" text="" text-banner="请输入用户名" style="edit.login" background-image="file(./res/username.png)"/>
+		<edit id="1004" rect="0,44,420,44" text="" text-banner="请输入密码" style="edit.login" style-object="268435458" background-image="file(./res/password.png)"/>
+	</static>
+
+
+	<button rect="220,205,80,30" text="找回密码" style="btn.link"/>
+	<button rect="310,205,80,30" text="帐号注册" style="btn.link" onclick="onclick_reg"/>
+	
+	<script src="file(./res/Login.js)"/>
+	<style src="file(./res/Login.css)" />
+	
+	<checkbutton id="1005" rect="30,205,80,30" text="记住密码" style="btn.normal" oncheck="oncheck_savepassword"/>
+	<checkbutton id="1006" rect="120,205,80,30" text="自动登录" style="btn.normal" oncheck="oncheck_autologin"/>
+	<button id="1105" rect="95,246,230,40" text="登 陆"/>
+
+</main>
